@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/main.css">
+    <title>Document</title>
+</head>
+
+<body class="h-full">
+    <div class="min-h-full flex flex-col">
+        <header>
+            <div class="container">
+    
+                <div class="flex flex-col border-b md:flex-row justify-between items-center">
+                    <div class="logo">Logo</div>
+                    <nav>
+                        <ul class="flex gap-3 items-center text-sm justify-center my-2 md:text-base">
+                            <li class="hover:text-lime-500"><a href="#">Филиалы</a></li>
+                            <li class="hover:text-lime-500"><a href="#">Бронирование</a></li>
+                            <li class="hover:text-lime-500"><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+    
+        </header>
+    
+        <main class="flex-auto">
+            <section class="confidence">
+                <div class="container">
+                    <h1 class="text-center my-4 font-bold text-2xl text-teal-500">Почему мы?</h1>
+    
+                    <div class="flex flex-col md:flex-row gap-6 justify-center">
+                        <div class="confidence-card mb-4">
+                            <img class="w-16 h-16 mb-2" src="/media/images/landing/contract.svg" alt="image">
+                            <h2 class="uppercase font-bold tracking-wider text-lg">Договор</h2>
+                            <p class="text-sm text-gray-800 mt-2">Договор оформляется с юристом</p>
+                        </div>
+        
+                        <div class="confidence-card mb-4">
+                            <img class="w-16 h-16 mb-2" src="/media/images/landing/support.svg" alt="image">
+                            <h2 class="uppercase font-bold tracking-wider text-lg">Тех.поддержка</h2>
+                            <p class="text-sm text-gray-800 mt-2">24/7 работает техническая поддержка</p>
+                        </div>
+        
+                        <div class="confidence-card">
+                            <img class="w-16 h-16 mb-2" src="/media/images/landing/speed.svg" alt="image">
+                            <h2 class="uppercase font-bold tracking-wider text-lg">Скорость</h2>
+                            <p class="text-sm text-gray-800 mt-2">Быстрая доставка в течении дня</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="search">
+                <div class="container">
+                    <div class="flex justify-start items-center my-3">
+                        <h2 class="font-semibold">Найти авто</h2>
+                        <img class="w-8 h-8 ml-2" src="/media/images/landing/search.svg" alt="search">
+                    </div>
+    
+                    <form>
+                        <div class="flex flex-col mb-3">
+                            <label for="vehicleClass">Выберите класс авто</label>
+                            <select class="p-3 rounded-md mt-2 cursor-pointer" name="vehicleClass" id="vehicleClass">
+                                <option value="Эконом">Эконом</option>
+                                <option value="Премиум">Премиум</option>
+                            </select>
+                        </div>
+    
+                        <div class="flex flex-col mb-3">
+                            <label for="vehicleBrand">Выберите марку авто</label>
+                            <select class="p-3 rounded-md mt-2 cursor-pointer" name="vehicleBrand" id="vehicleBrand">
+                                <optgroup label="Иномарки">
+                                    <option value="Audi">Audi</option>
+                                    <option value="BWM">BMW</option>
+                                    <option value="Mercedes">Mercedes</option>
+                                    <option value="Ford">Ford</option>
+                                    <option value="Tesla">Tesla</option>
+                                </optgroup>
+                                <optgroup label="Отечественное">
+                                    <option value="УАЗ">УАЗ</option>
+                                    <option value="Лада">Лада</option>
+                                </optgroup>
+                            </select>
+                        </div>
+    
+    
+    
+                        <div class="flex flex-col">
+                            <label for="vehicleModel">Выберите модель авто</label>
+                            <input class="border rounded-sm p-2 mt-2" type="text" id="vehicleModel" maxlength="32"
+                                placeholder="Например, Model X">
+                        </div>
+    
+                        <button class="bg-lime-600 text-white uppercase py-4 w-full transition-colors font-semibold rounded-sm mt-8 hover:bg-lime-500 ">
+                            Найти
+                        </button>
+                    </form>
+                </div>
+            </section>
+    
+            <section class="news mt-12">
+                <div class="container">
+    
+                    <div class="flex flex-col">
+                        <div class="border rounded-sm mb-6">
+    
+                            <div class="relative h-36 md:h-60">
+                                <div class="absolute bottom-0 top-0 left-0 right-0 bg-gradient-to-b from-black/20 to-black/70"></div>
+                                <img class="w-full h-full object-cover" src="/media/images/landing/new1.jpg" alt="new">
+                                <p class="absolute bottom-0 p-4 text-white font-bold">В России вынесли первый приговор за продажу аккаунтов каршеринга</p>
+                            </div>
+        
+                            <p class="p-3 text-sm">
+                                В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга. Приморский
+                                районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс. рублей.
+                                Как сообщает РАПСИ со ссылкой на Объединенную пресс-службу судов Петербурга, 21-летний молодой
+                                человек обвинялся по части 2 статьи 272 УК РФ (неправомерный доступ к компьютерной информации,
+                                совершенный из корыстной заинтересованности). <a class="text-lime-600" href="#">Читать далее</a>
+                            </p>
+        
+                        </div>
+        
+                        <div class="border rounded-sm mb-6">
+        
+                            <div class="relative h-36 md:h-60">
+                                <div class="absolute bottom-0 top-0 left-0 right-0 bg-gradient-to-b from-black/20 to-black/70"></div>
+                                <img class="w-full h-full object-cover" src="/media/images/landing/new-2.jpg" alt="new">
+                                <p class="absolute bottom-0 p-4 text-white font-bold">Программа поддержки каршеринга не заработала из-за российского телематического оборудования</p>
+                            </div>
+        
+                            <p class="p-3 text-sm">
+                                25 августа 2020 года стало известно о том, что программа поддержки каршеринга, которая была анонсирована ещё в апреле на совещании у президента РФ Владимира Путина, так и не заработала. <a class="text-lime-600" href="#">Читать далее</a>
+                            </p>
+        
+                        </div>
+        
+                        <div class="border rounded-sm">
+        
+                            <div class="relative h-36 md:h-60">
+                                <div class="absolute bottom-0 top-0 left-0 right-0 bg-gradient-to-b from-black/20 to-black/70"></div>
+                                <img class="w-full h-full object-cover" src="/media/images/landing/new-3.jpeg" alt="new">
+                                <p class="absolute bottom-0 p-4 text-white font-bold">Мошенничество с данными клиентов</p>
+                            </div>
+        
+                            <p class="p-3 text-sm">
+                                По сообщениям на июль 2020 г каршеринг становится отличным помощником для мошенников. С помощью селфи клиентов с паспортом на людей берут кредиты в микрофинансовых компаниях.
+                                Также базы каршерингов используют для звонков из фальшивой службы безопасности банков - так можно узнать наличие денег на счёте, данные банковских карт. <a class="text-lime-600" href="#">Читать далее</a>
+                            </p>
+        
+                        </div>
+                    </div>
+
+    
+                </div>
+            </section>
+        </main>
+    
+        <footer class="mt-16 bg-neutral-900 text-white">
+            <div class="container">
+                <small class="pt-8 block">8 (800) 555-35-35</small>
+    
+                <div class="flex flex-col py-16">
+                    <a class="hover:text-lime-600 mb-2" href="#">Вход</a>
+                    <a class="hover:text-lime-600 mb-2" href="#">Регистрация</a>
+                    <a class="hover:text-lime-600 mb-2" href="#">ЛК</a>
+                    <a class="hover:text-lime-600 mb-2" href="#">Бронирование</a>
+                    <a class="hover:text-lime-600 mb-2" href="#">История бронирования</a>
+                    <a class="hover:text-lime-600 mb-2" href="#">Филиалы</a>
+                    <a class="hover:text-lime-600 mb-2" href="#">Банковские карты</a>
+                    <a class="hover:text-lime-600" href="#">Выбор авто</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

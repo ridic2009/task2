@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    @apply w-full mx-auto px-4;
+}
+
+.logo {
+    @apply text-center p-3 uppercase font-extrabold text-teal-500;
+}
+
+.confidence-card {
+    @apply flex justify-center flex-col items-center rounded-md bg-stone-200 p-3 text-center shadow-md shadow-gray-400/50 md:h-60;
+}
